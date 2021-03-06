@@ -3,8 +3,6 @@ INCLUDES+=-I./
 LDFLAGS+=-pthread
 CC=gcc
 
-all: mserver
-
 mserver: mserver.c shared.h
 	$(CC) $(CFLAGS) $(INCLUDES) $(LDFLAGS) $< -o $@
 
